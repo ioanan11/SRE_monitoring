@@ -43,4 +43,15 @@ Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Ama
 ![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-10%20121434.png)
 
 
+# Task
+## 1. Auto Scaling
+### Step 1: Create a launch template
 
+- On AWS EC2: Launch Templates -> Create Launch Template 
+(Note: the resources you create for auto scaling will be related strictly to the region you create them on)
+- Enter a valid name (ioana_template_auto_scaling)
+- Tick the box under Auto Scaling guidance
+- For AMI choose Amazon Linux 2 AMI (HVM), SSD
+- Instance type: t2 micro
+- Network Settings: VPC
+-  
