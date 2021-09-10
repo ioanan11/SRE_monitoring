@@ -15,7 +15,7 @@ running smoothly.
 
 ## How it works
 
-![alt text]()
+![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-10%20120436.png)
 
 ## Use cases 
 
@@ -28,4 +28,4 @@ running smoothly.
 
 # Load Balancing and Auto Scaling
 
-![alt text]()
+![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-10%20115652.png)
