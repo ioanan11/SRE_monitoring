@@ -25,7 +25,6 @@ running smoothly.
 - Application monitoring
 - Log analytics
 
-![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-10%20115652.png)
 
 
 # Load Balancing and Auto Scaling
@@ -44,6 +43,9 @@ Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Ama
 
 
 # Task
+
+![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-10%20115652.png)
+
 ## 1. Auto Scaling
 ### Step 1: Create a launch template
 
