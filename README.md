@@ -54,4 +54,15 @@ Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Ama
 - For AMI choose Amazon Linux 2 AMI (HVM), SSD
 - Instance type: t2 micro
 - Network Settings: VPC
--  
+- Choose a SG (ioana_app_SG in this case)
+- Create launch template -> Create Auto Scaling Group
+
+### Step 2: Create an Auto Scaling Group
+
+- Enter a valid name (SRE_ioana_auto_scaling_group)
+- Network: pick the VPC and subnet you want to use (Default and Default 1a in this case)
+- Insert min, max and desired capacity of the auto scaling group (min = 1, max = 3, desired = 1)
+- (We would normally add notification with SNS)
+- Create Auto Scaling Group  
+
+Note: An EC2 instance should have been launched once we created the Auto Scaling Group
