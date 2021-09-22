@@ -51,7 +51,7 @@ Scaling out is when you add more instances to your Auto Scaling Group and scalin
 # Amazon SNS
 Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
 
-![alt text]()
+![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Product-page-diagram-Amazon-SNS_event-driven-SNS-compute%402X_.4b9c0a75aa40bda9cdb12f0176930a12da2872bf.png)
 
 Benefts:
 
@@ -61,7 +61,7 @@ Benefts:
 
 # Amazon SQS
 
-![alt text]()
+![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Diagram2.png)
 
 # Task
 
@@ -110,10 +110,18 @@ Benefts:
 - Create dynamic scaling policy
 - there are 3 types: target tracking, step and simple. 
 
-![alt text]()
+![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-22%20125638.png)
+
+### What are we monitoring?
+
+- **Resource Monitoring**: how the servers are running (CPU load, disk space, RAM etc.)
+- **Network Monitoring**: 
+- **Application Performance Monitoring**
+- **Third-party component Monitoring**
+
 
 ## 3. Cloud Watch Alarms
 
 
-**Note: everything we have done manually can be automated using Terraform. Please have a look at this repo: https://github.com/ioanan11/sre_terraform **
+**Note: everything we have done manually can be automated using Terraform. Please have a look at this repo: https://github.com/ioanan11/sre_terraform**
 
