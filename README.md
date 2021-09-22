@@ -127,4 +127,4 @@ Benefts:
 
 # How everything works
 
-![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-22%20143833.png)
+![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-22%20161546.png)
