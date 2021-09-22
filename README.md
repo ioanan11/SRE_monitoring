@@ -63,7 +63,7 @@ Benefts:
 
 ![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Diagram2.png)
 
-# Task
+# Task: Using CloudWatch with our app
 
 ![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-10%20115652.png)
 
@@ -125,3 +125,6 @@ Benefts:
 
 **Note: everything we have done manually can be automated using Terraform. Please have a look at this repo: https://github.com/ioanan11/sre_terraform**
 
+# How everything works
+
+![alt text]()
