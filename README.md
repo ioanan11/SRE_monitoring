@@ -41,12 +41,33 @@ Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Ama
 
 ![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-10%20121434.png)
 
+We can scale **up**, **down**, **out** and **in**.
+
+Scaling up is when you change the instance types within your Auto Scaling Group to a higher type (for example: changing an instance from a m4.large to a m4.xlarge), scaling down is to do the reverse.
+
+Scaling out is when you add more instances to your Auto Scaling Group and scaling in is when you reduce the number of instances in your Auto Scaling Group.
+
+
+# Amazon SNS
+Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
+
+![alt text]()
+
+Benefts:
+
+- managed service: you don't have to run or maintain it
+- instantaneous delivery: it is a very simple service to use as Web-based AWS Management Console offers the effortlessness of the point-and-click interface
+- ease of use 
+
+# Amazon SQS
+
+![alt text]()
 
 # Task
 
 ![alt text](https://github.com/ioanan11/SRE_monitoring/blob/main/Screenshot%202021-09-10%20115652.png)
 
-## 1. Auto Scaling
+## 1. Autoscaling and Load Balancing
 ### Step 1: Create a launch template
 
 - On AWS EC2: Launch Templates -> Create Launch Template 
@@ -59,7 +80,7 @@ Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Ama
 - Choose a SG (ioana_app_SG in this case)
 - Create launch template -> Create Auto Scaling Group
 
-### Step 2: Create an Auto Scaling Group
+### Step 2: Create an Auto Scaling Group (ASG)
 
 - Enter a valid name (SRE_ioana_auto_scaling_group)
 - Network: pick the VPC and subnet you want to use (Default and Default 1a in this case)
@@ -67,4 +88,32 @@ Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Ama
 - (We would normally add notification with SNS)
 - Create Auto Scaling Group  
 
-Note: An EC2 instance should have been launched once we created the Auto Scaling Group
+**Note: An EC2 instance should have been launched once we created the Auto Scaling Group. This instance will be running as long as the ASG exists.**
+
+### Step 3: Create a Load Balancer (LB)
+
+- On AWS EC2: `Load Balancer` -> `Create Load Balancer`
+- Select `Application Load Balancer` and name it
+- Has to be `Internet Facing` + `IPv4`
+- Default VPC -> all 3 subnets
+- Select (or create) target group
+
+	#### Target group setup
+	- target type: Instances
+	- name it
+	- HTTP and port 80
+	- register targets: select the instances associated with ASG
+
+## 2. Scaling policies
+
+- `From EC2 -> Auto Scaling groups` select your ASG and go to automatic scaling.  
+- Create dynamic scaling policy
+- there are 3 types: target tracking, step and simple. 
+
+![alt text]()
+
+## 3. Cloud Watch Alarms
+
+
+**Note: everything we have done manually can be automated using Terraform. Please have a look at this repo: https://github.com/ioanan11/sre_terraform **
+
