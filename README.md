@@ -115,13 +115,19 @@ Benefts:
 ### What are we monitoring?
 
 - **Resource Monitoring**: how the servers are running (CPU load, disk space, RAM etc.)
-- **Network Monitoring**: 
-- **Application Performance Monitoring**
-- **Third-party component Monitoring**
+- **Network Monitoring**: what data comes in and out of your network (requests, responses etc)
+- **Application Performance Monitoring**: how the overall service is performing (speed, completeness of a response)
+- **Third-party component Monitoring**:we are monitoring the health and availability of third-party components in the architecture (cloud hostong servers, ad servers etc)
 
 
 ## 3. Cloud Watch Alarms
+### Step 1: Select metric
+- EC2 -> Auto Scaling Group -> Select metric
+- Specify metric and conditions
 
+### Step 2: Add notification
+
+### Step 3: Add Auto Scaling Action
 
 **Note: everything we have done manually can be automated using Terraform. Please have a look at this repo: https://github.com/ioanan11/sre_terraform**
 
